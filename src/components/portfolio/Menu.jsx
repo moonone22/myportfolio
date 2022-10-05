@@ -126,8 +126,8 @@ const Menu = [
       images:[port1,port2,port3],
       skill:[{img:react,name:"react"},{img:FM,name:"FramerMotion"},{img:CSS,name:"CSS"}],
       comment:"FramerMotion을 최대한 많이 활용하면서 만든 저의 포트폴리오 사이트입니다. ",
-      myPage:"https://ekfdnjs22.netlify.app/",
-      GitHub:"https://github.com/moonone22/netflix",
+      myPage:"https://moonportfolio.netlify.app/",
+      GitHub:"https://github.com/moonone22/myportfolio",
     },
     {
       id: 8,
