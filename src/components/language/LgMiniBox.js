@@ -21,16 +21,23 @@ const LgMini = styled(motion.div)`
 const LgIMG = styled(motion.div)`
    display:grid ;
    grid-template-columns:repeat(2,1fr) ;
-   img{
+   height:100% ;
+   div{
+    background-position:center ;
+    background-repeat:no-repeat ;
+    background-size:cover ;
     border:3px solid ;
     box-shadow: 0px 5px 20px 0px;
     border-radius:15px ;
     border-radius:30px ;
+    width: 100%;
+    height: 100%;
    }
-   img:first-child{
+   
+   div:first-child{
     transform:rotate(345deg) ;
    }
-   img:last-child{
+   div:last-child{
     transform:rotate(26deg) ;
    }
 
@@ -87,8 +94,8 @@ const LgMiniBox = ({id}) => {
     <LgMini layoutId={id} variants={boxVar} initial="start" animate="animate">
         <h1>{id}</h1>
         <LgIMG variants={ImgBoxVar}  initial="start" animate="animate">
-            <motion.img variants={delayBoxVar}  src={data.images[0]} alt="" className="work_img" />
-            <motion.img variants={delayBoxVar}  src={data.images[1]} alt="" className="work_img" />
+            <motion.div variants={delayBoxVar}  style={{backgroundImage:`url(${data.images[0]})`}} alt="" className="work_img" />
+            <motion.div variants={delayBoxVar}  style={{backgroundImage:`url(${data.images[1]})`}} alt="" className="work_img" />
         </LgIMG>
         <LgText>
             <h2>Commentary</h2>
